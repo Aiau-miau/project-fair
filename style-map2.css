@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding:0 ;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:  linear-gradient(rgba(4,9,30,0.7),rgba(4,9,3)),url(shutterstock_658847998.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.top img{
+    width: 80px; 
+    position: absolute;
+    top:7%;
+    
+}
+.top{
+    display: flex;
+    justify-content: center;
+
+}
+.left{
+    position: absolute;
+    top:8%;
+    left:5%;
+    display: flex;
+    gap:30px;
+    font-family:"Poppins", sans-serif;
+}
+.left a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.left a:hover{
+    text-decoration: underline;
+    transition: 0.5s;
+    
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    margin:20%;
+    font-size: 30px;
+    text-align: center;
+}
+.map{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.map iframe{
+    margin-top: 100px;
+}
+.adress img{
+    width: 22px;
+}
+.adress{
+    display: flex;
+    gap:15px;
+}
+.end{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 100px;
+    padding: 100px;
+}
+.right-info{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.left-info{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    justify-content: center;
+}
+input{
+    padding: 10px;
+    height: 30px;
+    width: 400px;
+    border-radius: 5px;
+    border: 1px solid rgb(199, 198, 198);
+}
+button{
+    height: 30px;
+    width: 420px;
+    border: none;
+    background: rgb(45, 45, 154);
+    color: white;
+}
+
+@media(max-width:376px){
+    body {
+        font-size: 14px;
+    }
+    .header .left{
+        position: absolute;
+        top:3%;
+    }
+    .name{
+        font-size: 18px;
+        position: relative;
+        top:350px;
+        text-align: center;
+    }
+    .header .top img {
+        width: 50px;
+        height: auto;
+    }
+    .header .name h1 {
+        font-size: 24px;
+    }
+    .end{
+        display: flex;
+        flex-direction: column;
+    }
+    input{
+        width: 200px;
+    }
+    button{
+        width: 220px;
+    }
+}
